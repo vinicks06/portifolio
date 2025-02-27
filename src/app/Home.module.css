@@ -101,6 +101,12 @@
   z-index: 2;
   animation: slideInFromLeft 1.5s ease-out;
 }
+.fontMarge {
+  color:#000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #10E957;
+  margin-top: 9rem;
+}
 
 /* Media Queries para Telas Menores */
 @media (max-width: 1024px) {

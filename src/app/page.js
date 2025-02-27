@@ -1,5 +1,6 @@
 import ParticlesBackground from "./components/ParticlesBackground";
 import styles from "./Home.module.css";
+import { Autoplay } from "./components/Carrosel"
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
           Integer rhoncus, nibh vel gravida dictum, orci tortor lacinia lacus, 
           vitae scelerisque nisi odio at diam.
           </p>
+          <h1 className={styles.fontMarge}>Minhas ferramentas:</h1>
+          <br></br>
+          <Autoplay></Autoplay>
       </main>
     </div>
   );

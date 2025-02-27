@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "grommet": "^2.45.1",
+    "grommet-icons": "^4.12.4",
     "next": "15.1.6",
     "particles.js": "^2.0.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.15"
   }
 }
