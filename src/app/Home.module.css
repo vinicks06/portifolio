@@ -18,7 +18,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
 }
 
 /* Ícones do menu */
@@ -94,6 +94,63 @@
   z-index: 2;
 }
 
+.rodape {
+  display: flex;
+  align-items: center;
+  
+}
+.imgGit {
+  width: 150px;
+  height: 150px;
+}
+.imgLinkedin {
+  width: 300px;
+  height: 150px;
+}
+.divGitHub {
+  background-color: #585050;
+}
+.divLinkedin {
+  background-color: #0077B5;
+}
+.link {
+  display: flex;
+  flex: 1;
+}
+
+.divLinkedin, .divGitHub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10rem;
+  gap: 20rem;
+  padding: 2rem;
+  color:#ffff;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: #000;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.divLinkedin:hover, .divGitHub:hover, .email:hover {
+  filter: brightness(0.7); /* Escurece a div ao passar o mouse */
+}
+
+.email {
+  display: flex;
+  background-color: #00ff50;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #000;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
 /* Texto Inferior */
 .textBottom {
   font-size: 1.5rem;
@@ -106,6 +163,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #10E957;
   margin-top: 9rem;
+  font-size: 3rem;
 }
 
 /* Media Queries para Telas Menores */

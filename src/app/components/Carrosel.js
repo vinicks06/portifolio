@@ -1,6 +1,5 @@
 // AutoplayCarousel.js
 import React from 'react';
-import { Car, TreeOption } from 'grommet-icons';
 import { Box, Carousel} from 'grommet';
 import Image from 'next/image';
 import imgJS from '../img/JavaScript.png';
@@ -24,7 +23,7 @@ export const Autoplay = () => (
       <Box pad="xlarge">
       <Image
           src={imgCSS}
-          alt="JavaScript Logo"
+          alt="CSS Logo"
           width={300}
           height={300}
         />
@@ -32,7 +31,7 @@ export const Autoplay = () => (
       <Box pad="xlarge">
       <Image
           src={imgHTML}
-          alt="JavaScript Logo"
+          alt="HTML Logo"
           width={300}
           height={300}
         />
@@ -40,7 +39,7 @@ export const Autoplay = () => (
       <Box pad="xlarge">
       <Image
           src={imgPostgreSQL}
-          alt="JavaScript Logo"
+          alt="PostgreSQL Logo"
           width={300}
           height={300}
         />
