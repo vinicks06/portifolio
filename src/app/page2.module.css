@@ -1,0 +1,319 @@
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+  }
+
+  .navbar {
+    background-color: #00ff50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  /* Ícones do menu */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Conteúdo centralizado */
+  .content {
+    position: relative;
+    z-index: 5;
+    margin-top: 6rem;
+    padding: 1.5rem;
+  }
+
+  .div1 {
+    display: flex;
+    position: relative;
+  }
+
+  .titleJogo {
+    font-size: 2rem;
+    position: absolute; /* Posiciona o texto "Jogo" de forma absoluta */
+    top: 10rem; /* Ajuste a posição vertical */
+    left: 73rem; /* Ajuste a posição horizontal */
+    z-index: 10; /* Garante que fique acima do texto descritivo */
+    color: black;
+    background: #14e956;
+    background-color: #14e956;
+    background-image: linear-gradient(315deg, #14e956, #72f29a);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 9px 7px 32px -11px rgba(20, 233, 86, .74);
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 900;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .texto {
+    font-size: 1.5rem;
+    width: 65.3rem;
+    margin-left: 4rem;
+    margin-top: 17rem;
+    transition: all 0.6s ease;
+  }
+  
+  .imgJogo {
+    border-radius: 15px;
+    box-shadow: 0 60px 123px -25px hsla(225, 2%, 62%, .42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    height: 398px;
+    opacity: 1;
+    -webkit-transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+    transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+    transition: all .6s ease;
+    width: 700px;
+    margin-top: 8rem;
+  }
+  .imgJogo:hover {
+    box-shadow: 0.19px 67px -38px hsla(225, 2%, 62%, .8);
+    -webkit-filter: blur(.2px);
+    filter: blur(.2px);
+    opacity: 1;
+    -webkit-transform: perspective(800px) rotateY(-15deg) 
+    translateY(-50px) rotateX(-10deg) scale(1);
+    transform: perspective(800px) rotateY(-15deg) 
+    translateY(70px) rotateX(-10deg) translateX(180px) scale(1.4);
+  }
+
+  .imgJogo:hover ~ .texto {
+    font-size: 2.5rem;
+    margin-left: 38rem;
+    margin-top: 12rem;
+}
+.imgJogo:hover + .titleJogo {
+    font-size: 2.5rem;
+    margin-left: 20rem;
+    margin-top: -4rem;
+}
+
+.div2 {
+  display: flex;
+  position: relative;
+  margin-top: 8rem;
+  justify-content: space-between; /* Alinha os itens nas extremidades */
+  align-items: flex-start; /* Alinha os itens no topo */
+  flex-direction: row-reverse;
+}
+
+.titleGerenciador {
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 13rem;
+  left: 20rem; /* Ajuste a posição horizontal */
+  z-index: 10;
+  color: black;
+  background: #14e956;
+  background-color: #14e956;
+  background-image: linear-gradient(315deg, #14e956, #72f29a);
+  border: none;
+  border-radius: 7px;
+  box-shadow: 9px 7px 32px -11px rgba(20, 233, 86, .74);
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 900;
+  outline: none;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out 0s;
+}
+
+.texto2 {
+  font-size: 1.5rem;
+  width: 50%; /* Ajuste a largura do texto */
+  margin-left: 4rem;
+  margin-top: 20rem;
+  transition: all 0.6s ease;
+}
+
+.imgGerenciador {
+  border-radius: 15px;
+  box-shadow: 0 60px 123px -25px hsla(225, 2%, 62%, .42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  height: 398px;
+  opacity: 1;
+  -webkit-transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
+  transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
+  transition: all .6s ease;
+  width: 700px;
+  margin-top: 8rem;
+  margin-left: auto; /* Empurra a imagem para a direita */
+}
+
+.imgGerenciador:hover {
+  box-shadow: 0.19px 67px -38px hsla(225, 2%, 62%, .8);
+  -webkit-filter: blur(.2px);
+  filter: blur(.2px);
+  opacity: 1;
+  -webkit-transform: perspective(800px) rotateY(-15deg) 
+  translateY(-50px) rotateX(-10deg) scale(1);
+  transform: perspective(800px) rotateY(-15deg) 
+  translateY(-50px) rotateX(-10deg) translateX(-350px) scale(1.8);
+}
+
+.imgGerenciador:hover ~ .texto2 {
+    font-size: 2.5rem;
+    width: 100rem;
+    margin-right: 30rem;
+    margin-top: 12rem;
+  }
+.imgGerenciador:hover + .titleGerenciador {
+    font-size: 2.5rem;
+    left: 4rem;
+    margin-top: 5rem;
+}
+
+.div3 {
+    display: flex;
+    position: relative;
+    margin-top: 8rem;
+  }
+
+  .titlePortfolio {
+    font-size: 2rem;
+    position: absolute; /* Posiciona o texto "Jogo" de forma absoluta */
+    top: 10rem; /* Ajuste a posição vertical */
+    left: 73rem; /* Ajuste a posição horizontal */
+    z-index: 10; /* Garante que fique acima do texto descritivo */
+    color: black;
+    background: #14e956;
+    background-color: #14e956;
+    background-image: linear-gradient(315deg, #14e956, #72f29a);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 9px 7px 32px -11px rgba(20, 233, 86, .74);
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 900;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .texto3 {
+    font-size: 1.5rem;
+    width: 65.3rem;
+    margin-left: 4rem;
+    margin-top: 17rem;
+    transition: all 0.6s ease;
+  }
+  
+  .imgPortfolio {
+    border-radius: 15px;
+    box-shadow: 0 60px 123px -25px hsla(225, 2%, 62%, .42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    height: 398px;
+    opacity: 1;
+    -webkit-transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+    transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+    transition: all .6s ease;
+    width: 700px;
+    margin-top: 8rem;
+  }
+  .imgPortfolio:hover {
+    box-shadow: 0.19px 67px -38px hsla(225, 2%, 62%, .8);
+    -webkit-filter: blur(.2px);
+    filter: blur(.2px);
+    opacity: 1;
+    -webkit-transform: perspective(800px) rotateY(-15deg) 
+    translateY(-50px) rotateX(-10deg) scale(1);
+    transform: perspective(800px) rotateY(-15deg) 
+    translateY(70px) rotateX(-10deg) translateX(180px) scale(1.4);
+  }
+
+  .imgPortfolio:hover ~ .texto3 {
+    font-size: 2.5rem;
+    margin-left: 38rem;
+    margin-top: 12rem;
+}
+.imgPortfolio:hover + .titlePortfolio {
+    font-size: 2.5rem;
+    margin-left: 14rem;
+    margin-top: -4rem;
+}
+
+.conecte {
+    text-align: center;
+    color:#000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #10E957;
+    font-size: 3rem;
+    transform: rotate(3.6deg);
+    margin-top: 20rem;
+  }
+
+.rodape {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    
+  }
+  .imgGit {
+    width: 150px;
+    height: 150px;
+  }
+  .imgLinkedin {
+    width: 300px;
+    height: 150px;
+  }
+  .divGitHub {
+    background-color: #585050;
+  }
+  .divLinkedin {
+    background-color: #0077B5;
+  }
+  .link {
+    display: flex;
+    flex: 1;
+  }
+  
+  .divLinkedin, .divGitHub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    gap: 20rem;
+    padding: 2rem;
+    color:#ffff;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #000;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+  
+  .divLinkedin:hover, .divGitHub:hover, .email:hover {
+    filter: brightness(0.7); /* Escurece a div ao passar o mouse */
+  }
+  
+  .email {
+    display: flex;
+    background-color: #00ff50;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: #000;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
